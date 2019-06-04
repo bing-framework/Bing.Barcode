@@ -3,9 +3,49 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.28307.136
 MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bing.Barcode", "src\Bing.Barcode\Bing.Barcode.csproj", "{1BE83267-9634-42DD-AB27-717976596E21}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "00-document", "00-document", "{CD079283-7775-45F8-956B-9D73BF555B0C}"
+	ProjectSection(SolutionItems) = preProject
+		README.md = README.md
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "01-src", "01-src", "{B269A962-7D00-4D2B-BB75-69F11C4574D4}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "02-tests", "02-tests", "{70DBA94D-A796-47F3-BE1C-EA8B095FEA90}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "03-sample", "03-sample", "{C5A66D3B-566E-4214-A838-38E252F2E339}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bing.Barcode.ZXing", "src\Bing.Barcode.ZXing\Bing.Barcode.ZXing.csproj", "{2A6CB68C-B88F-4028-B524-590222FCD9C4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bing.Barcode.Tests", "tests\Bing.Barcode.Tests\Bing.Barcode.Tests.csproj", "{8DE60881-C554-44F9-9DC2-29053168266E}"
+EndProject
 Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1BE83267-9634-42DD-AB27-717976596E21}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1BE83267-9634-42DD-AB27-717976596E21}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1BE83267-9634-42DD-AB27-717976596E21}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1BE83267-9634-42DD-AB27-717976596E21}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2A6CB68C-B88F-4028-B524-590222FCD9C4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2A6CB68C-B88F-4028-B524-590222FCD9C4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2A6CB68C-B88F-4028-B524-590222FCD9C4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2A6CB68C-B88F-4028-B524-590222FCD9C4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8DE60881-C554-44F9-9DC2-29053168266E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8DE60881-C554-44F9-9DC2-29053168266E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8DE60881-C554-44F9-9DC2-29053168266E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8DE60881-C554-44F9-9DC2-29053168266E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{1BE83267-9634-42DD-AB27-717976596E21} = {B269A962-7D00-4D2B-BB75-69F11C4574D4}
+		{2A6CB68C-B88F-4028-B524-590222FCD9C4} = {B269A962-7D00-4D2B-BB75-69F11C4574D4}
+		{8DE60881-C554-44F9-9DC2-29053168266E} = {70DBA94D-A796-47F3-BE1C-EA8B095FEA90}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {17EBC8F3-0743-43AC-A267-CA049EA29C87}
