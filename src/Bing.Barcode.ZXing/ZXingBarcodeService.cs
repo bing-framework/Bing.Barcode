@@ -7,7 +7,6 @@ using Bing.Barcode.Core;
 using Bing.Barcode.Enums;
 using ZXing;
 using ZXing.OneD;
-using ZXing.QrCode;
 using ZXing.ZKWeb.Rendering;
 using ZQI = global::ZXing.QrCode.Internal;
 
@@ -66,9 +65,9 @@ namespace Bing.Barcode.ZXing
         }
 
         /// <summary>
-        /// 获取二维码图片
+        /// 获取条形码图片
         /// </summary>
-        /// <param name="param">二维码参数</param>
+        /// <param name="param">条形码参数</param>
         /// <returns></returns>
         private Bitmap GetBitmap(BarcodeParam param)
         {
@@ -89,14 +88,24 @@ namespace Bing.Barcode.ZXing
                         {EncodeHintType.ERROR_CORRECTION, _level}
                     }
                 },
-                Renderer = new BitmapRenderer()
-                {
-                    Foreground = Color.FromName(param.Foreground.Name),
-                    Background = Color.FromName(param.Background.Name)
-                }
+                Renderer = GetRenderer(param)
             };
 
             return bitmapBarcodeWriter.Write(param.Content);
+        }
+
+        /// <summary>
+        /// 获取渲染器
+        /// </summary>
+        /// <param name="param">条形码参数</param>
+        /// <returns></returns>
+        private BitmapRenderer GetRenderer(BarcodeParam param)
+        {
+            var renderer = new BitmapRenderer();
+            renderer.Foreground = Color.FromName(param.Foreground.Name);
+            renderer.Background = Color.FromName(param.Background.Name);
+            renderer.TextFont = new Font(param.FontName, param.FontSize, param.Bold ? FontStyle.Bold : FontStyle.Regular);
+            return renderer;
         }
     }
 }

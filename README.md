@@ -43,6 +43,9 @@ service.ToBase64String();
 - Background：背景色
 - Margin: 边距
 - ShowText: 显示条形码文本
+- FontName: 字体名称
+- FontSize: 字体大小
+- Bold: 加粗字体
 
 ### 接口方法
 - `Param(BarcodeParam param)`：设置条形码参数
