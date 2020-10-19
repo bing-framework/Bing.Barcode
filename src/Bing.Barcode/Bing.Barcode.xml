@@ -1,0 +1,227 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Bing.Barcode</name>
+    </assembly>
+    <members>
+        <member name="T:Bing.Barcode.Abstractions.IBarcodeService">
+            <summary>
+            条形码服务
+            </summary>
+        </member>
+        <member name="M:Bing.Barcode.Abstractions.IBarcodeService.Param(Bing.Barcode.Core.BarcodeParam)">
+            <summary>
+            设置条形码参数
+            </summary>
+            <param name="param">条形码参数</param>
+        </member>
+        <member name="M:Bing.Barcode.Abstractions.IBarcodeService.ToStream">
+            <summary>
+            转换成流
+            </summary>
+        </member>
+        <member name="M:Bing.Barcode.Abstractions.IBarcodeService.ToBytes">
+            <summary>
+            转换成字节数组
+            </summary>
+        </member>
+        <member name="M:Bing.Barcode.Abstractions.IBarcodeService.ToBase64String">
+            <summary>
+            转换成Base64字符串
+            </summary>
+        </member>
+        <member name="M:Bing.Barcode.Abstractions.IBarcodeService.ToBase64String(Bing.Barcode.Enums.Base64ImageType)">
+            <summary>
+            转换成Base64字符串，并附带前缀
+            </summary>
+            <param name="type">图片类型</param>
+        </member>
+        <member name="M:Bing.Barcode.Abstractions.IBarcodeService.WriteToFile(System.String)">
+            <summary>
+            写入到文件
+            </summary>
+            <param name="path">文件路径</param>
+        </member>
+        <member name="T:Bing.Barcode.Core.BarcodeParam">
+            <summary>
+            条形码参数
+            </summary>
+        </member>
+        <member name="P:Bing.Barcode.Core.BarcodeParam.Width">
+            <summary>
+            宽度
+            </summary>
+        </member>
+        <member name="P:Bing.Barcode.Core.BarcodeParam.Height">
+            <summary>
+            高度
+            </summary>
+        </member>
+        <member name="P:Bing.Barcode.Core.BarcodeParam.Level">
+            <summary>
+            容错级别
+            </summary>
+        </member>
+        <member name="P:Bing.Barcode.Core.BarcodeParam.Foreground">
+            <summary>
+            前景色
+            </summary>
+        </member>
+        <member name="P:Bing.Barcode.Core.BarcodeParam.Background">
+            <summary>
+            背景色
+            </summary>
+        </member>
+        <member name="P:Bing.Barcode.Core.BarcodeParam.Content">
+            <summary>
+            内容
+            </summary>
+        </member>
+        <member name="P:Bing.Barcode.Core.BarcodeParam.Margin">
+            <summary>
+            边距
+            </summary>
+        </member>
+        <member name="P:Bing.Barcode.Core.BarcodeParam.ShowText">
+            <summary>
+            是否显示文本
+            </summary>
+        </member>
+        <member name="P:Bing.Barcode.Core.BarcodeParam.FontName">
+            <summary>
+            字体名称
+            </summary>
+        </member>
+        <member name="P:Bing.Barcode.Core.BarcodeParam.FontSize">
+            <summary>
+            字体大小
+            </summary>
+        </member>
+        <member name="P:Bing.Barcode.Core.BarcodeParam.Bold">
+            <summary>
+            是否加粗
+            </summary>
+        </member>
+        <member name="M:Bing.Barcode.Core.BarcodeParam.#ctor">
+            <summary>
+            初始化一个<see cref="T:Bing.Barcode.Core.BarcodeParam"/>类型的实例
+            </summary>
+        </member>
+        <member name="T:Bing.Barcode.Core.BarcodeServiceBase">
+            <summary>
+            条形码服务基类
+            </summary>
+        </member>
+        <member name="F:Bing.Barcode.Core.BarcodeServiceBase._param">
+            <summary>
+            条形码参数
+            </summary>
+        </member>
+        <member name="M:Bing.Barcode.Core.BarcodeServiceBase.Param(Bing.Barcode.Core.BarcodeParam)">
+            <summary>
+            设置条形码参数
+            </summary>
+            <param name="param">条形码参数</param>
+        </member>
+        <member name="M:Bing.Barcode.Core.BarcodeServiceBase.ToStream">
+            <summary>
+            转换成流
+            </summary>
+        </member>
+        <member name="M:Bing.Barcode.Core.BarcodeServiceBase.ToBytes">
+            <summary>
+            转换成字节数组
+            </summary>
+        </member>
+        <member name="M:Bing.Barcode.Core.BarcodeServiceBase.ToBase64String">
+            <summary>
+            转换成Base64字符串
+            </summary>
+        </member>
+        <member name="M:Bing.Barcode.Core.BarcodeServiceBase.ToBase64String(Bing.Barcode.Enums.Base64ImageType)">
+            <summary>
+            转换成Base64字符串，并附带前缀
+            </summary>
+            <param name="type">图片类型</param>
+        </member>
+        <member name="M:Bing.Barcode.Core.BarcodeServiceBase.GetBase64StringPrefix(Bing.Barcode.Enums.Base64ImageType)">
+            <summary>
+            获取Base64字符串前缀
+            </summary>
+            <param name="type">图片类型</param>
+        </member>
+        <member name="M:Bing.Barcode.Core.BarcodeServiceBase.WriteToFile(System.String)">
+            <summary>
+            写入到文件
+            </summary>
+            <param name="path">文件路径</param>
+        </member>
+        <member name="M:Bing.Barcode.Core.BarcodeServiceBase.HandlerCorrectionLevel(Bing.Barcode.Enums.ErrorCorrectionLevel)">
+            <summary>
+            处理容错级别
+            </summary>
+            <param name="level">容错级别</param>
+        </member>
+        <member name="M:Bing.Barcode.Core.BarcodeServiceBase.Init(Bing.Barcode.Core.BarcodeParam)">
+            <summary>
+            初始化
+            </summary>
+        </member>
+        <member name="M:Bing.Barcode.Core.BarcodeServiceBase.Create(Bing.Barcode.Core.BarcodeParam)">
+            <summary>
+            创建条形码
+            </summary>
+            <param name="param">条形码参数</param>
+        </member>
+        <member name="T:Bing.Barcode.Enums.Base64ImageType">
+            <summary>
+            Base64字符串图片类型
+            </summary>
+        </member>
+        <member name="F:Bing.Barcode.Enums.Base64ImageType.Png">
+            <summary>
+            image/png
+            </summary>
+        </member>
+        <member name="F:Bing.Barcode.Enums.Base64ImageType.Jpeg">
+            <summary>
+            image/jpeg
+            </summary>
+        </member>
+        <member name="F:Bing.Barcode.Enums.Base64ImageType.XIcon">
+            <summary>
+            image/x-icon
+            </summary>
+        </member>
+        <member name="F:Bing.Barcode.Enums.Base64ImageType.Gif">
+            <summary>
+            image/gif
+            </summary>
+        </member>
+        <member name="T:Bing.Barcode.Enums.ErrorCorrectionLevel">
+            <summary>
+            容错级别
+            </summary>
+        </member>
+        <member name="F:Bing.Barcode.Enums.ErrorCorrectionLevel.L">
+            <summary>
+            可以纠正最大7%的错误
+            </summary>
+        </member>
+        <member name="F:Bing.Barcode.Enums.ErrorCorrectionLevel.M">
+            <summary>
+            可以纠正最大15%的错误
+            </summary>
+        </member>
+        <member name="F:Bing.Barcode.Enums.ErrorCorrectionLevel.Q">
+            <summary>
+            可以纠正最大25%的错误
+            </summary>
+        </member>
+        <member name="F:Bing.Barcode.Enums.ErrorCorrectionLevel.H">
+            <summary>
+            可以纠正最大30%的错误
+            </summary>
+        </member>
+    </members>
+</doc>

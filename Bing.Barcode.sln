@@ -1,13 +1,16 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 15
-VisualStudioVersion = 15.0.28307.136
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30523.141
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bing.Barcode", "src\Bing.Barcode\Bing.Barcode.csproj", "{1BE83267-9634-42DD-AB27-717976596E21}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Bing.Barcode", "src\Bing.Barcode\Bing.Barcode.csproj", "{1BE83267-9634-42DD-AB27-717976596E21}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "00-document", "00-document", "{CD079283-7775-45F8-956B-9D73BF555B0C}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "_SolutionItems", "_SolutionItems", "{CD079283-7775-45F8-956B-9D73BF555B0C}"
 	ProjectSection(SolutionItems) = preProject
+		common.props = common.props
+		Publish.bat = Publish.bat
 		README.md = README.md
+		version.props = version.props
 	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "01-src", "01-src", "{B269A962-7D00-4D2B-BB75-69F11C4574D4}"
@@ -16,9 +19,17 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "02-tests", "02-tests", "{70
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "03-sample", "03-sample", "{C5A66D3B-566E-4214-A838-38E252F2E339}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bing.Barcode.ZXing", "src\Bing.Barcode.ZXing\Bing.Barcode.ZXing.csproj", "{2A6CB68C-B88F-4028-B524-590222FCD9C4}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Bing.Barcode.ZXing", "src\Bing.Barcode.ZXing\Bing.Barcode.ZXing.csproj", "{2A6CB68C-B88F-4028-B524-590222FCD9C4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bing.Barcode.Tests", "tests\Bing.Barcode.Tests\Bing.Barcode.Tests.csproj", "{8DE60881-C554-44F9-9DC2-29053168266E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Bing.Barcode.Tests", "tests\Bing.Barcode.Tests\Bing.Barcode.Tests.csproj", "{8DE60881-C554-44F9-9DC2-29053168266E}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "asset", "asset", "{387353F6-386A-40EC-95DC-39D50D09466E}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "props", "props", "{50A7CCDC-6313-43A3-9B1E-794C24675C17}"
+	ProjectSection(SolutionItems) = preProject
+		asset\props\misc.props = asset\props\misc.props
+		asset\props\package.props = asset\props\package.props
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -46,6 +57,8 @@ Global
 		{1BE83267-9634-42DD-AB27-717976596E21} = {B269A962-7D00-4D2B-BB75-69F11C4574D4}
 		{2A6CB68C-B88F-4028-B524-590222FCD9C4} = {B269A962-7D00-4D2B-BB75-69F11C4574D4}
 		{8DE60881-C554-44F9-9DC2-29053168266E} = {70DBA94D-A796-47F3-BE1C-EA8B095FEA90}
+		{387353F6-386A-40EC-95DC-39D50D09466E} = {CD079283-7775-45F8-956B-9D73BF555B0C}
+		{50A7CCDC-6313-43A3-9B1E-794C24675C17} = {387353F6-386A-40EC-95DC-39D50D09466E}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {17EBC8F3-0743-43AC-A267-CA049EA29C87}

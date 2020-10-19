@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Bing.Barcode.ZXing</name>
+    </assembly>
+    <members>
+        <member name="T:Bing.Barcode.ZXing.ZXingBarcodeService">
+            <summary>
+            ZXing.Net 条形码服务
+            </summary>
+        </member>
+        <member name="F:Bing.Barcode.ZXing.ZXingBarcodeService._level">
+            <summary>
+            ZXing.Net容错级别
+            </summary>
+        </member>
+        <member name="M:Bing.Barcode.ZXing.ZXingBarcodeService.HandlerCorrectionLevel(Bing.Barcode.Enums.ErrorCorrectionLevel)">
+            <summary>
+            处理容错级别
+            </summary>
+            <param name="level">容错级别</param>
+        </member>
+        <member name="M:Bing.Barcode.ZXing.ZXingBarcodeService.Create(Bing.Barcode.Core.BarcodeParam)">
+            <summary>
+            创建条形码
+            </summary>
+            <param name="param">条形码参数</param>
+        </member>
+        <member name="M:Bing.Barcode.ZXing.ZXingBarcodeService.GetBitmap(Bing.Barcode.Core.BarcodeParam)">
+            <summary>
+            获取条形码图片
+            </summary>
+            <param name="param">条形码参数</param>
+        </member>
+        <member name="M:Bing.Barcode.ZXing.ZXingBarcodeService.GetRenderer(Bing.Barcode.Core.BarcodeParam)">
+            <summary>
+            获取渲染器
+            </summary>
+            <param name="param">条形码参数</param>
+        </member>
+    </members>
+</doc>

@@ -1,0 +1,17 @@
+﻿<Project>
+
+  <PropertyGroup>
+    <AssemblyName>Bing.Barcode.ZXing</AssemblyName>
+    <PackageId>Bing.Barcode.ZXing</PackageId>
+    <Description>Bing.Barcode.ZXing是Bing应用框架的ZXing.Net条形码操作类库。</Description>
+  </PropertyGroup>
+
+  <ItemGroup Condition=" '$(TargetFramework)' == 'netstandard2.0' ">
+    <PackageReference Include="ZXing.Net" Version="0.16.6" />
+    <PackageReference Include="ZXing.Net.Bindings.ZKWeb.System.Drawing" Version="0.16.5" />
+  </ItemGroup>
+  <ItemGroup Condition=" '$(TargetFramework)' == 'netcoreapp3.1' ">
+    <PackageReference Include="ZXing.Net" Version="0.16.6" />
+    <PackageReference Include="ZXing.Net.Bindings.ZKWeb.System.Drawing" Version="0.16.5" />
+  </ItemGroup>
+</Project>

@@ -51,7 +51,6 @@ namespace Bing.Barcode.ZXing
         /// 创建条形码
         /// </summary>
         /// <param name="param">条形码参数</param>
-        /// <returns></returns>
         protected override byte[] Create(BarcodeParam param)
         {
             using (var bitmap = GetBitmap(param))
@@ -68,7 +67,6 @@ namespace Bing.Barcode.ZXing
         /// 获取条形码图片
         /// </summary>
         /// <param name="param">条形码参数</param>
-        /// <returns></returns>
         private Bitmap GetBitmap(BarcodeParam param)
         {
             // 使用ITF 格式，不能被现在常用的支付宝、微信扫出来
@@ -98,7 +96,6 @@ namespace Bing.Barcode.ZXing
         /// 获取渲染器
         /// </summary>
         /// <param name="param">条形码参数</param>
-        /// <returns></returns>
         private BitmapRenderer GetRenderer(BarcodeParam param)
         {
             var renderer = new BitmapRenderer();

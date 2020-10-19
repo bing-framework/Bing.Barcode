@@ -88,10 +88,7 @@ namespace Bing.Barcode.Core
         /// <summary>
         /// 初始化
         /// </summary>
-        protected virtual void Init(BarcodeParam param)
-        {
-            HandlerCorrectionLevel(param.Level);
-        }
+        protected virtual void Init(BarcodeParam param) => HandlerCorrectionLevel(param.Level);
 
         /// <summary>
         /// 创建条形码
